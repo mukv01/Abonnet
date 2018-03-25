@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmRentComputers
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+Partial Class FormRentComputers
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,9 +20,9 @@ Partial Class frmRentComputers
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmRentComputers))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormRentComputers))
         Me.bntClose = New System.Windows.Forms.Button()
         Me.btnClear = New System.Windows.Forms.Button()
         Me.btnPrintReceipt = New System.Windows.Forms.Button()
@@ -166,7 +166,7 @@ Partial Class frmRentComputers
         '
         'pb3
         '
-        Me.pb3.BackgroundImage = Global.AbonnentCompany.My.Resources.Resources.PC
+        Me.pb3.BackgroundImage = Global.Abonnet.My.Resources.Resources.PC
         Me.pb3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.pb3.Location = New System.Drawing.Point(15, 183)
         Me.pb3.Name = "pb3"
@@ -176,7 +176,7 @@ Partial Class frmRentComputers
         '
         'pb2
         '
-        Me.pb2.BackgroundImage = Global.AbonnentCompany.My.Resources.Resources.notebook_9_pen___frontrrr
+        Me.pb2.BackgroundImage = Global.Abonnet.My.Resources.Resources.notebook_9_pen___frontrrr
         Me.pb2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.pb2.Location = New System.Drawing.Point(15, 97)
         Me.pb2.Name = "pb2"
@@ -186,7 +186,7 @@ Partial Class frmRentComputers
         '
         'pb1
         '
-        Me.pb1.BackgroundImage = Global.AbonnentCompany.My.Resources.Resources.Ipad
+        Me.pb1.BackgroundImage = Global.Abonnet.My.Resources.Resources.Ipad
         Me.pb1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.pb1.Location = New System.Drawing.Point(15, 11)
         Me.pb1.Name = "pb1"

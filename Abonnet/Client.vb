@@ -3,5 +3,5 @@
     Public Address As String
     Public PhoneNumber As String
     Public Email As String
-    Public typeofClients As String
+    Public TypeClient As String
 End Class

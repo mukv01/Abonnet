@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmRentModems
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+Partial Class FormRentModems
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,9 +20,9 @@ Partial Class frmRentModems
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmRentModems))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormRentModems))
         Me.txtTotalPrice = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.txtTax = New System.Windows.Forms.TextBox()
@@ -139,7 +139,7 @@ Partial Class frmRentModems
         '
         'pb1
         '
-        Me.pb1.BackgroundImage = Global.AbonnentCompany.My.Resources.Resources.TL_WR841N_un_V2_1041_large_0_20150724113937_620x465
+        Me.pb1.BackgroundImage = Global.Abonnet.My.Resources.Resources.TL_WR841N_un_V2_1041_large_0_20150724113937_620x465
         Me.pb1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.pb1.Location = New System.Drawing.Point(7, 12)
         Me.pb1.Name = "pb1"
@@ -149,7 +149,7 @@ Partial Class frmRentModems
         '
         'pb2
         '
-        Me.pb2.BackgroundImage = Global.AbonnentCompany.My.Resources.Resources.Archer_C8_01
+        Me.pb2.BackgroundImage = Global.Abonnet.My.Resources.Resources.Archer_C8_01
         Me.pb2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.pb2.Location = New System.Drawing.Point(7, 98)
         Me.pb2.Name = "pb2"
@@ -159,7 +159,7 @@ Partial Class frmRentModems
         '
         'pb3
         '
-        Me.pb3.BackgroundImage = Global.AbonnentCompany.My.Resources.Resources.router_620x462
+        Me.pb3.BackgroundImage = Global.Abonnet.My.Resources.Resources.router_620x462
         Me.pb3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.pb3.Location = New System.Drawing.Point(7, 184)
         Me.pb3.Name = "pb3"

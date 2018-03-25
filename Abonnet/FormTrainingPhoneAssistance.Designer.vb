@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmTrainingPhoneAssistance
+Partial Class FormTrainingPhoneAssistance
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,7 +22,7 @@ Partial Class frmTrainingPhoneAssistance
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmTrainingPhoneAssistance))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormTrainingPhoneAssistance))
         Me.rbTraining = New System.Windows.Forms.RadioButton()
         Me.bntClose = New System.Windows.Forms.Button()
         Me.btnClear = New System.Windows.Forms.Button()

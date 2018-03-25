@@ -1,6 +1,6 @@
 ﻿Imports System.Text.RegularExpressions
 
-Public Class FrmMain
+Public Class FormMain
     Private clients As New List(Of Client)
     Private selectedClient As Integer
     ''' <summary>
@@ -37,10 +37,10 @@ Public Class FrmMain
         newClient.Email = txtEmail.Text
 
         If rbStandardClient.Checked Then
-            newClient.typeofClients = "Clients standards"
+            newClient.TypeClient = "Clients standards"
         End If
         If rbBusinessClient.Checked Then
-            newClient.typeofClients = "Clients affaires"
+            newClient.TypeClient = "Clients affaires"
         End If
         'Ajouter le client a la liste
         clients.Add(newClient)
@@ -96,10 +96,10 @@ Public Class FrmMain
             txtAddress.Text = clients(lstClients.SelectedIndex).Address
             txtPhoneNumber.Text = clients(lstClients.SelectedIndex).PhoneNumber
             txtEmail.Text = clients(lstClients.SelectedIndex).Email
-            If clients(lstClients.SelectedIndex).typeofClients = "Clients standards" Then
+            If clients(lstClients.SelectedIndex).TypeClient = "Clients standards" Then
                 rbStandardClient.Checked = True
             End If
-            If clients(lstClients.SelectedIndex).typeofClients = "Clients affaires" Then
+            If clients(lstClients.SelectedIndex).TypeClient = "Clients affaires" Then
                 rbBusinessClient.Checked = True
             End If
             selectedClient = lstClients.SelectedIndex
@@ -128,11 +128,11 @@ Public Class FrmMain
         newClient.Email = txtEmail.Text
         'Si un client standard est sélecctionné
         If rbStandardClient.Checked Then
-            newClient.typeofClients = "Client standard"
+            newClient.TypeClient = "Client standard"
         End If
         'Si un client affaires est sélectionné
         If rbBusinessClient.Checked Then
-            newClient.typeofClients = "Client affaire"
+            newClient.TypeClient = "Client affaire"
         End If
 
         clients.Insert(selectedClient, newClient)
@@ -149,7 +149,7 @@ Public Class FrmMain
             MessageBox.Show("Sélectionner un client de la liste", "Erreur de sélection", MessageBoxButtons.OK, MessageBoxIcon.Information)
             Return
         End If
-        Dim frmInternetAccess As New frmInternetAccess(clients(lstClients.SelectedIndex))
+        Dim frmInternetAccess As New FormInternetAccess(clients(lstClients.SelectedIndex))
         frmInternetAccess.ShowDialog()
     End Sub
     ''' <summary>
@@ -162,7 +162,7 @@ Public Class FrmMain
             MessageBox.Show("Sélectionner un client de la liste", "Erreur de sélection", MessageBoxButtons.OK, MessageBoxIcon.Information)
             Return
         End If
-        Dim frmRentModems As New frmRentModems(clients(lstClients.SelectedIndex))
+        Dim frmRentModems As New FormRentModems(clients(lstClients.SelectedIndex))
         frmRentModems.ShowDialog()
     End Sub
     ''' <summary>
@@ -175,7 +175,7 @@ Public Class FrmMain
             MessageBox.Show("Sélectionner un client de la liste", "Erreur de sélection", MessageBoxButtons.OK, MessageBoxIcon.Information)
             Return
         End If
-        Dim frmRentComputers As New frmRentComputers(clients(lstClients.SelectedIndex))
+        Dim frmRentComputers As New FormRentComputers(clients(lstClients.SelectedIndex))
         frmRentComputers.ShowDialog()
     End Sub
     ''' <summary>
@@ -188,7 +188,7 @@ Public Class FrmMain
             MessageBox.Show("Sélectionner un client de la liate", "Erreur de sélection", MessageBoxButtons.OK, MessageBoxIcon.Information)
             Return
         End If
-        Dim frmTrainingPhoneAssistance As New frmTrainingPhoneAssistance(clients(lstClients.SelectedIndex))
+        Dim frmTrainingPhoneAssistance As New FormTrainingPhoneAssistance(clients(lstClients.SelectedIndex))
         frmTrainingPhoneAssistance.ShowDialog()
     End Sub
     ''' <summary>

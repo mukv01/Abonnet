@@ -73,29 +73,29 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Client.vb" />
-    <Compile Include="frmInternetAccess.Designer.vb">
-      <DependentUpon>frmInternetAccess.vb</DependentUpon>
+    <Compile Include="FormInternetAccess.Designer.vb">
+      <DependentUpon>FormInternetAccess.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmInternetAccess.vb">
+    <Compile Include="FormInternetAccess.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMain.vb">
+    <Compile Include="FormMain.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMain.Designer.vb">
-      <DependentUpon>frmMain.vb</DependentUpon>
+    <Compile Include="FormMain.Designer.vb">
+      <DependentUpon>FormMain.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmRentComputers.Designer.vb">
-      <DependentUpon>frmRentComputers.vb</DependentUpon>
+    <Compile Include="FormRentComputers.Designer.vb">
+      <DependentUpon>FormRentComputers.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmRentComputers.vb">
+    <Compile Include="FormRentComputers.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmTrainingPhoneAssistance.Designer.vb">
-      <DependentUpon>frmTrainingPhoneAssistance.vb</DependentUpon>
+    <Compile Include="FormTrainingPhoneAssistance.Designer.vb">
+      <DependentUpon>FormTrainingPhoneAssistance.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmTrainingPhoneAssistance.vb">
+    <Compile Include="FormTrainingPhoneAssistance.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -113,25 +113,25 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="frmRentModems.Designer.vb">
-      <DependentUpon>frmRentModems.vb</DependentUpon>
+    <Compile Include="FormRentModems.Designer.vb">
+      <DependentUpon>FormRentModems.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmRentModems.vb">
+    <Compile Include="FormRentModems.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="frmInternetAccess.resx">
-      <DependentUpon>frmInternetAccess.vb</DependentUpon>
+    <EmbeddedResource Include="FormInternetAccess.resx">
+      <DependentUpon>FormInternetAccess.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMain.resx">
-      <DependentUpon>frmMain.vb</DependentUpon>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmRentComputers.resx">
-      <DependentUpon>frmRentComputers.vb</DependentUpon>
+    <EmbeddedResource Include="FormRentComputers.resx">
+      <DependentUpon>FormRentComputers.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmTrainingPhoneAssistance.resx">
-      <DependentUpon>frmTrainingPhoneAssistance.vb</DependentUpon>
+    <EmbeddedResource Include="FormTrainingPhoneAssistance.resx">
+      <DependentUpon>FormTrainingPhoneAssistance.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -139,11 +139,12 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmRentModems.resx">
-      <DependentUpon>frmRentModems.vb</DependentUpon>
+    <EmbeddedResource Include="FormRentModems.resx">
+      <DependentUpon>FormRentModems.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Abonnet.sqlite" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>

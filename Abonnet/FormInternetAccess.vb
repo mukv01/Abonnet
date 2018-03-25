@@ -1,10 +1,10 @@
 ﻿Imports System.Globalization
 Imports System.Threading
-Imports AbonnentCompany
+Imports Abonnet
 ''' <summary>
 ''' Formulaire accès Internet
 ''' </summary>
-Public Class frmInternetAccess
+Public Class FormInternetAccess
     Private price As Decimal
     Private costForShipping As Decimal
     Private tax As Decimal
@@ -84,7 +84,7 @@ Public Class frmInternetAccess
         e.Graphics.DrawString("Addresse: " + client.Address, New Font(FontFamily.GenericMonospace, 20, FontStyle.Regular), New SolidBrush(Color.Black), 30, 75)
         e.Graphics.DrawString("Téléphone: " + client.PhoneNumber, New Font(FontFamily.GenericMonospace, 20, FontStyle.Regular), New SolidBrush(Color.Black), 30, 105)
         e.Graphics.DrawString("Courriel: " + client.Email, New Font(FontFamily.GenericMonospace, 20, FontStyle.Regular), New SolidBrush(Color.Black), 30, 135)
-        e.Graphics.DrawString("Type de client: " + client.typeofClients, New Font(FontFamily.GenericMonospace, 20, FontStyle.Regular), New SolidBrush(Color.Black), 30, 165)
+        e.Graphics.DrawString("Type de client: " + client.TypeClient, New Font(FontFamily.GenericMonospace, 20, FontStyle.Regular), New SolidBrush(Color.Black), 30, 165)
 
         e.Graphics.DrawString("Accès Internet sur base annuelle: ", New Font(FontFamily.GenericMonospace, 20, FontStyle.Regular), New SolidBrush(Color.Black), 30, 230)
         e.Graphics.DrawString("Prix: " + price.ToString("C"), New Font(FontFamily.GenericMonospace, 20, FontStyle.Regular), New SolidBrush(Color.Black), 30, 260)

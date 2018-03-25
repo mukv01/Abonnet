@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class FrmMain
+Partial Class FormMain
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,7 +22,7 @@ Partial Class FrmMain
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmMain))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormMain))
         Me.lstClients = New System.Windows.Forms.ListBox()
         Me.btnAddNewClient = New System.Windows.Forms.Button()
         Me.btnDeleteClient = New System.Windows.Forms.Button()
@@ -52,23 +52,25 @@ Partial Class FrmMain
         Me.btnPhoneAssistance = New System.Windows.Forms.Button()
         Me.btnRentModems = New System.Windows.Forms.Button()
         Me.btnInternetAccess = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.gbClientInformation.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lstClients
         '
         Me.lstClients.FormattingEnabled = True
-        Me.lstClients.Location = New System.Drawing.Point(15, 27)
+        Me.lstClients.Location = New System.Drawing.Point(8, 117)
         Me.lstClients.Name = "lstClients"
         Me.lstClients.Size = New System.Drawing.Size(220, 264)
         Me.lstClients.TabIndex = 10
         '
         'btnAddNewClient
         '
-        Me.btnAddNewClient.Location = New System.Drawing.Point(252, 257)
+        Me.btnAddNewClient.Location = New System.Drawing.Point(248, 347)
         Me.btnAddNewClient.Name = "btnAddNewClient"
         Me.btnAddNewClient.Size = New System.Drawing.Size(68, 36)
         Me.btnAddNewClient.TabIndex = 7
@@ -77,7 +79,7 @@ Partial Class FrmMain
         '
         'btnDeleteClient
         '
-        Me.btnDeleteClient.Location = New System.Drawing.Point(326, 257)
+        Me.btnDeleteClient.Location = New System.Drawing.Point(322, 347)
         Me.btnDeleteClient.Name = "btnDeleteClient"
         Me.btnDeleteClient.Size = New System.Drawing.Size(68, 36)
         Me.btnDeleteClient.TabIndex = 8
@@ -86,7 +88,7 @@ Partial Class FrmMain
         '
         'btnEditClient
         '
-        Me.btnEditClient.Location = New System.Drawing.Point(400, 257)
+        Me.btnEditClient.Location = New System.Drawing.Point(396, 347)
         Me.btnEditClient.Name = "btnEditClient"
         Me.btnEditClient.Size = New System.Drawing.Size(68, 36)
         Me.btnEditClient.TabIndex = 9
@@ -104,7 +106,7 @@ Partial Class FrmMain
         Me.gbClientInformation.Controls.Add(Me.Label2)
         Me.gbClientInformation.Controls.Add(Me.txtName)
         Me.gbClientInformation.Controls.Add(Me.Label1)
-        Me.gbClientInformation.Location = New System.Drawing.Point(241, 27)
+        Me.gbClientInformation.Location = New System.Drawing.Point(236, 117)
         Me.gbClientInformation.Name = "gbClientInformation"
         Me.gbClientInformation.Size = New System.Drawing.Size(239, 224)
         Me.gbClientInformation.TabIndex = 2
@@ -189,9 +191,9 @@ Partial Class FrmMain
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(39, 57)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(54, 13)
+        Me.Label2.Size = New System.Drawing.Size(48, 13)
         Me.Label2.TabIndex = 0
-        Me.Label2.Text = "Addresse:"
+        Me.Label2.Text = "Adresse:"
         '
         'txtName
         '
@@ -268,7 +270,7 @@ Partial Class FrmMain
         Me.GroupBox2.Controls.Add(Me.btnPhoneAssistance)
         Me.GroupBox2.Controls.Add(Me.btnRentModems)
         Me.GroupBox2.Controls.Add(Me.btnInternetAccess)
-        Me.GroupBox2.Location = New System.Drawing.Point(486, 27)
+        Me.GroupBox2.Location = New System.Drawing.Point(482, 117)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(155, 266)
         Me.GroupBox2.TabIndex = 12
@@ -311,11 +313,23 @@ Partial Class FrmMain
         Me.btnInternetAccess.Text = "Accès Internet"
         Me.btnInternetAccess.UseVisualStyleBackColor = True
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.White
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 24)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(647, 83)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 13
+        Me.PictureBox1.TabStop = False
+        '
         'FrmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(647, 305)
+        Me.ClientSize = New System.Drawing.Size(647, 390)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.gbClientInformation)
         Me.Controls.Add(Me.btnEditClient)
@@ -338,6 +352,7 @@ Partial Class FrmMain
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -372,4 +387,5 @@ Partial Class FrmMain
     Friend WithEvents RentComputersToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents InternetAccessToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents TrainingPhoneAssistanceToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
