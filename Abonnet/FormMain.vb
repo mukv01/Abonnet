@@ -42,12 +42,32 @@ Public Class FormMain
         If rbBusinessClient.Checked Then
             newClient.TypeClient = "Clients affaires"
         End If
-        'Ajouter le client a la liste
-        clients.Add(newClient)
-        'Ajouter le nouveau client au listbox
-        lstClients.Items.Add(newClient.Name)
-        clearTextBoxes()
+
+        If Not VerifierClientExistence(newClient) Then
+            'Ajouter le client a la liste
+            clients.Add(newClient)
+            'Ajouter le nouveau client au listbox
+            lstClients.Items.Add(newClient.Name)
+
+            clearTextBoxes()
+        End If
     End Sub
+
+    Function VerifierClientExistence(ByVal newClient As Client) As Boolean
+        For Each monClient In clients
+            If (newClient.Name = monClient.Name) Then
+                MessageBox.Show("Le nom existe déjà", "Invalide", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                Return True
+            End If
+
+            If (newClient.Email = monClient.Email) Then
+                MessageBox.Show("Le courriel existe déjà", "Invalide", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                Return True
+            End If
+        Next
+
+        Return False
+    End Function
     ''' <summary>
     ''' Vider les boîtes de texte
     ''' </summary>
@@ -232,6 +252,11 @@ Public Class FormMain
         btnPhoneAssistance_Click(sender, e)
     End Sub
 
+    ''' <summary>
+    ''' Sous routine de chargement par défaut
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
     Private Sub FormMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'Créer un nouveau client
         Dim newClient As New Client

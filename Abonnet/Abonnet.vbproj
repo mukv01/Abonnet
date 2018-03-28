@@ -144,7 +144,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Abonnet.sqlite" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -174,6 +173,7 @@
     <None Include="Resources\Ordinateur PC.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="abonnet.jpg" />
     <Content Include="Resources\abonnet.ico" />
     <Content Include="Resources\abonnet.jpg" />
   </ItemGroup>
