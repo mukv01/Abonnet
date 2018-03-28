@@ -253,7 +253,7 @@ Partial Class FormInternetAccess
         Me.PrintPreviewDialogReceipt.Name = "PrintPreviewDialogMember"
         Me.PrintPreviewDialogReceipt.Visible = False
         '
-        'frmInternetAccess
+        'FormInternetAccess
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -276,7 +276,7 @@ Partial Class FormInternetAccess
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
-        Me.Name = "frmInternetAccess"
+        Me.Name = "FormInternetAccess"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Accès Internet"
         Me.GroupBox1.ResumeLayout(False)

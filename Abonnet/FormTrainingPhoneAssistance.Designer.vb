@@ -184,7 +184,7 @@ Partial Class FormTrainingPhoneAssistance
         Me.PrintPreviewDialogReceipt.Name = "PrintPreviewDialogMember"
         Me.PrintPreviewDialogReceipt.Visible = False
         '
-        'frmTrainingPhoneAssistance
+        'FormTrainingPhoneAssistance
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -205,7 +205,7 @@ Partial Class FormTrainingPhoneAssistance
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
-        Me.Name = "frmTrainingPhoneAssistance"
+        Me.Name = "FormTrainingPhoneAssistance"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Formation et assistance téléphonique"
         Me.ResumeLayout(False)
