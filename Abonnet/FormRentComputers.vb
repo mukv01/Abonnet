@@ -31,22 +31,11 @@
     ''' <param name="sender"></param>
     ''' <param name="e"></param>
     Private Sub btnPrintReceipt_Click(sender As Object, e As EventArgs) Handles btnPrintReceipt.Click
-        'Vérifier si l'usager a entré le prix
-        If Decimal.TryParse(txtPrice.Text, price) = False Or price <= 0 Then
-            MessageBox.Show("Entrée invalide", "Recommencer", MessageBoxButtons.OK, MessageBoxIcon.Information)
-            Return
+        If AfficherResultat() Then
+            'display Print Preview Dialog
+            PrintPreviewDialogReceipt.Document = PrintDocumentReceipt
+            PrintPreviewDialogReceipt.ShowDialog()
         End If
-        'Vérifier si l'usager a entré la taxe
-        If Decimal.TryParse(txtTax.Text, tax) = False Or tax <= 0 Or price > 100 Then
-            MessageBox.Show("Entrez la taxw>0 et le prix > 100!", "Entrée invalide", MessageBoxButtons.OK, MessageBoxIcon.Information)
-            Return
-        End If
-        totalPrice = price + (price * tax) / 100D
-        'afficher le total
-        txtTotalPrice.Text = totalPrice.ToString("C")
-        'display Print Preview Dialog
-        PrintPreviewDialogReceipt.Document = PrintDocumentReceipt
-        PrintPreviewDialogReceipt.ShowDialog()
     End Sub
     ''' <summary>
     ''' Pour imprimer/impression du reçu
@@ -90,5 +79,36 @@
         Me.Close()
     End Sub
 
+    Private Function AfficherResultat() As Boolean
+        If Not txtPrice.Text = String.Empty And Not txtTax.Text = String.Empty Then
+            'Vérifier si l'usager a entré le prix
+            If Decimal.TryParse(txtPrice.Text, price) = False Or price <= 0 Then
+                txtTotalPrice.Text = String.Empty
+                MessageBox.Show("Entrée invalide", "Recommencer", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                Return False
+            End If
+            'Vérifier si l'usager a entré la taxe
+            If Decimal.TryParse(txtTax.Text, tax) = False Or tax <= 0 Or price > 100 Then
+                txtTotalPrice.Text = String.Empty
+                MessageBox.Show("Entrez la taxe > 0 et le prix > 100!", "Entrée invalide", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                Return False
+            End If
+            totalPrice = price + (price * tax) / 100D
+            'afficher le total
+            txtTotalPrice.Text = totalPrice.ToString("C")
 
+            Return True
+        Else
+            txtTotalPrice.Text = String.Empty
+            Return False
+        End If
+    End Function
+
+    Private Sub txtPrice_TextChanged(sender As Object, e As EventArgs) Handles txtPrice.TextChanged
+        AfficherResultat()
+    End Sub
+
+    Private Sub txtTax_TextChanged(sender As Object, e As EventArgs) Handles txtTax.TextChanged
+        AfficherResultat()
+    End Sub
 End Class

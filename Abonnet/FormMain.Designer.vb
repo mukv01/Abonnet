@@ -324,7 +324,7 @@ Partial Class FormMain
         Me.PictureBox1.TabIndex = 13
         Me.PictureBox1.TabStop = False
         '
-        'FrmMain
+        'FormMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -342,7 +342,7 @@ Partial Class FormMain
         Me.MainMenuStrip = Me.MenuStrip1
         Me.MaximizeBox = False
         Me.MinimizeBox = False
-        Me.Name = "FrmMain"
+        Me.Name = "FormMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Compagnie Abonnet"
         Me.gbClientInformation.ResumeLayout(False)

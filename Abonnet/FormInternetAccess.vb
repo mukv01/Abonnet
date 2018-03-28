@@ -21,11 +21,12 @@ Public Class FormInternetAccess
     End Sub
 
     ''' <summary>
-    ''' Bouton pour clear
+    ''' Bouton pour effacer les données
     ''' </summary>
     ''' <param name="sender"></param>
     ''' <param name="e"></param>
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
+        'effacer les données
         txtPrice.Clear()
         txtCostForShipping.Clear()
         txtTax.Clear()
@@ -100,7 +101,7 @@ Public Class FormInternetAccess
             e.Graphics.DrawString("pour l'accès Internet", New Font(FontFamily.GenericMonospace, 20, FontStyle.Regular), New SolidBrush(Color.Black), 30, 410)
         End If
         If (rbCreditCard.Checked) Then
-            e.Graphics.DrawString("Éthode de paiement: carte de crédit", New Font(FontFamily.GenericMonospace, 20, FontStyle.Regular), New SolidBrush(Color.Black), 30, 440)
+            e.Graphics.DrawString("Méthode de paiement: carte de crédit", New Font(FontFamily.GenericMonospace, 20, FontStyle.Regular), New SolidBrush(Color.Black), 30, 440)
         End If
         If (rbCheque.Checked) Then
             e.Graphics.DrawString("Méthode de paiement: chèque", New Font(FontFamily.GenericMonospace, 20, FontStyle.Regular), New SolidBrush(Color.Black), 30, 440)

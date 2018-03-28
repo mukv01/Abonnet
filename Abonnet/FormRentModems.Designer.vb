@@ -207,7 +207,7 @@ Partial Class FormRentModems
         Me.PrintPreviewDialogReceipt.Name = "PrintPreviewDialogMember"
         Me.PrintPreviewDialogReceipt.Visible = False
         '
-        'frmRentModems
+        'FormRentModems
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -230,7 +230,7 @@ Partial Class FormRentModems
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
-        Me.Name = "frmRentModems"
+        Me.Name = "FormRentModems"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Location de modems"
         CType(Me.pb1, System.ComponentModel.ISupportInitialize).EndInit()

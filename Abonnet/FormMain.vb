@@ -231,5 +231,44 @@ Public Class FormMain
     Private Sub TrainingPhoneAssistanceToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TrainingPhoneAssistanceToolStripMenuItem.Click
         btnPhoneAssistance_Click(sender, e)
     End Sub
+
+    Private Sub FormMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'Créer un nouveau client
+        Dim newClient As New Client
+        newClient.Name = "Jonathan Tremblay"
+        newClient.Address = "144 Boulevard de la paix"
+        newClient.PhoneNumber = "6131234566"
+        newClient.Email = "jonathan.tremblay@hotmail.com"
+        newClient.TypeClient = "Clients standards"
+
+        'Ajouter le client a la liste
+        clients.Add(newClient)
+        'Ajouter le nouveau client au listbox
+        lstClients.Items.Add(newClient.Name)
+
+        newClient = New Client
+        newClient.Name = "Sophie Charbonneau"
+        newClient.Address = "23 Boulevard Maisoneuve"
+        newClient.PhoneNumber = "6134564567"
+        newClient.Email = "sophie.charbonneau@hotmail.com"
+        newClient.TypeClient = "Clients standards"
+
+        'Ajouter le client a la liste
+        clients.Add(newClient)
+        'Ajouter le nouveau client au listbox
+        lstClients.Items.Add(newClient.Name)
+
+        newClient = New Client
+        newClient.Name = "Imaginatif Inc."
+        newClient.Address = "45 Boulevard Maisoneuve"
+        newClient.PhoneNumber = "8194564567"
+        newClient.Email = "info@imaginatif.com"
+        newClient.TypeClient = "Clients affaires"
+
+        'Ajouter le client a la liste
+        clients.Add(newClient)
+        'Ajouter le nouveau client au listbox
+        lstClients.Items.Add(newClient.Name)
+    End Sub
 End Class
 

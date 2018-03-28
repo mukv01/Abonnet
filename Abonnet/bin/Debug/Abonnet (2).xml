@@ -65,7 +65,7 @@ Abonnet
 </member>
 <member name="M:Abonnet.FormInternetAccess.btnClear_Click(System.Object,System.EventArgs)">
  <summary>
- Bouton pour effacer les données
+ Bouton pour clear
  </summary>
  <param name="sender"></param>
  <param name="e"></param>

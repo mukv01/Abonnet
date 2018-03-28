@@ -207,7 +207,7 @@ Partial Class FormRentComputers
         Me.PrintPreviewDialogReceipt.Name = "PrintPreviewDialogMember"
         Me.PrintPreviewDialogReceipt.Visible = False
         '
-        'frmRentComputers
+        'FormRentComputers
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -231,7 +231,7 @@ Partial Class FormRentComputers
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
-        Me.Name = "frmRentComputers"
+        Me.Name = "FormRentComputers"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Location d'ordinateurs"
         CType(Me.pb3, System.ComponentModel.ISupportInitialize).EndInit()
