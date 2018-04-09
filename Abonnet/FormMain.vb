@@ -46,10 +46,10 @@ Public Class FormMain
 
         If Not VerifierClientExistence(newClient) Then
             'Ajouter le client a la liste
-            clients.Insert(0, newClient)
+            clients.Insert(clients.Count - 1, newClient)
 
             'Ajouter le nouveau client au listbox
-            lstClients.Items.Insert(0, newClient.Name)
+            lstClients.Items.Insert(lstClients.Items.Count - 1, newClient.Name)
 
             clearTextBoxes()
         End If
@@ -99,13 +99,17 @@ Public Class FormMain
     ''' <param name="sender"></param>
     ''' <param name="e"></param>
     Private Sub btnDeleteClient_Click(sender As Object, e As EventArgs) Handles btnDeleteClient.Click
-        If lstClients.SelectedIndex = -1 Then
+        If lstClients.SelectedIndex = -1 Or lstClients.SelectedIndex = (lstClients.Items.Count - 1) Then
             MessageBox.Show("Sélectionner un client de la liste", "Erreur de sélection", MessageBoxButtons.OK, MessageBoxIcon.Information)
             Return
         End If
-        clients.RemoveAt(lstClients.SelectedIndex)
-        lstClients.Items.RemoveAt(lstClients.SelectedIndex)
-        clearTextBoxes()
+
+        Dim result As DialogResult = MessageBox.Show("Voulez-vous supprimer les données du client?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Information)
+        If result = DialogResult.Yes Then
+            clients.RemoveAt(lstClients.SelectedIndex)
+            lstClients.Items.RemoveAt(lstClients.SelectedIndex)
+            clearTextBoxes()
+        End If
     End Sub
     ''' <summary>
     ''' Sélectioner un client de la liste
@@ -135,30 +139,35 @@ Public Class FormMain
     ''' <param name="sender"></param>
     ''' <param name="e"></param>
     Private Sub btnEditClient_Click(sender As Object, e As EventArgs) Handles btnEditClient.Click
-        If selectedClient = -1 Then
+        If lstClients.SelectedIndex = -1 Or lstClients.SelectedIndex = (lstClients.Items.Count - 1) Then
             MessageBox.Show("Sélectionner un client de la liste", "Erreur de sélection", MessageBoxButtons.OK, MessageBoxIcon.Information)
             Return
         End If
 
-        clients.RemoveAt(selectedClient)
-        lstClients.Items.RemoveAt(selectedClient)
-        'Créer un nouveau client
-        Dim newClient As New Client
-        newClient.Name = txtName.Text
-        newClient.Address = txtAddress.Text
-        newClient.PhoneNumber = txtPhoneNumber.Text
-        newClient.Email = txtEmail.Text
-        'Si un client standard est sélecctionné
-        If rbStandardClient.Checked Then
-            newClient.TypeClient = "Client standard"
-        End If
-        'Si un client affaires est sélectionné
-        If rbBusinessClient.Checked Then
-            newClient.TypeClient = "Client affaire"
-        End If
+        Dim result As DialogResult = MessageBox.Show("Voulez-vous modifier les données du client?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Information)
+        If result = DialogResult.Yes Then
+            clients.RemoveAt(selectedClient)
+            lstClients.Items.RemoveAt(selectedClient)
+            'Créer un nouveau client
+            Dim newClient As New Client
+            newClient.Name = txtName.Text
+            newClient.Address = txtAddress.Text
+            newClient.PhoneNumber = txtPhoneNumber.Text
+            newClient.Email = txtEmail.Text
+            'Si un client standard est sélecctionné
+            If rbStandardClient.Checked Then
+                newClient.TypeClient = "Client standard"
+            End If
+            'Si un client affaires est sélectionné
+            If rbBusinessClient.Checked Then
+                newClient.TypeClient = "Client affaire"
+            End If
 
-        clients.Insert(selectedClient, newClient)
-        lstClients.Items.Insert(selectedClient, newClient.Name)
+            clients.Insert(selectedClient, newClient)
+            lstClients.Items.Insert(selectedClient, newClient.Name)
+        Else
+            lstClients_SelectedIndexChanged(sender, e)
+        End If
     End Sub
 
     ''' <summary>
@@ -281,9 +290,9 @@ Public Class FormMain
         newClient.TypeClient = "Clients standards"
 
         'Ajouter le client a la liste
-        clients.Insert(0, newClient)
+        clients.Insert(clients.Count - 1, newClient)
         'Ajouter le nouveau client au listbox
-        lstClients.Items.Insert(0, newClient.Name)
+        lstClients.Items.Insert(lstClients.Items.Count - 1, newClient.Name)
 
         newClient = New Client
         newClient.Name = "Sophie Charbonneau"
@@ -293,9 +302,9 @@ Public Class FormMain
         newClient.TypeClient = "Clients standards"
 
         'Ajouter le client a la liste
-        clients.Insert(0, newClient)
+        clients.Insert(clients.Count - 1, newClient)
         'Ajouter le nouveau client au listbox
-        lstClients.Items.Insert(0, newClient.Name)
+        lstClients.Items.Insert(lstClients.Items.Count - 1, newClient.Name)
 
         newClient = New Client
         newClient.Name = "Imaginatif Inc."
@@ -305,9 +314,9 @@ Public Class FormMain
         newClient.TypeClient = "Clients affaires"
 
         'Ajouter le client a la liste
-        clients.Insert(0, newClient)
+        clients.Insert(clients.Count - 1, newClient)
         'Ajouter le nouveau client au listbox
-        lstClients.Items.Insert(0, newClient.Name)
+        lstClients.Items.Insert(lstClients.Items.Count - 1, newClient.Name)
     End Sub
 End Class
 
