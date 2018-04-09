@@ -66,32 +66,32 @@ Partial Class FormMain
         Me.lstClients.Location = New System.Drawing.Point(8, 117)
         Me.lstClients.Name = "lstClients"
         Me.lstClients.Size = New System.Drawing.Size(220, 264)
-        Me.lstClients.TabIndex = 10
+        Me.lstClients.TabIndex = 1
         '
         'btnAddNewClient
         '
-        Me.btnAddNewClient.Location = New System.Drawing.Point(248, 347)
+        Me.btnAddNewClient.Location = New System.Drawing.Point(248, 335)
         Me.btnAddNewClient.Name = "btnAddNewClient"
         Me.btnAddNewClient.Size = New System.Drawing.Size(68, 36)
-        Me.btnAddNewClient.TabIndex = 7
+        Me.btnAddNewClient.TabIndex = 3
         Me.btnAddNewClient.Text = "Ajouter Client"
         Me.btnAddNewClient.UseVisualStyleBackColor = True
         '
         'btnDeleteClient
         '
-        Me.btnDeleteClient.Location = New System.Drawing.Point(322, 347)
+        Me.btnDeleteClient.Location = New System.Drawing.Point(322, 335)
         Me.btnDeleteClient.Name = "btnDeleteClient"
         Me.btnDeleteClient.Size = New System.Drawing.Size(68, 36)
-        Me.btnDeleteClient.TabIndex = 8
+        Me.btnDeleteClient.TabIndex = 4
         Me.btnDeleteClient.Text = "Supprimer Client"
         Me.btnDeleteClient.UseVisualStyleBackColor = True
         '
         'btnEditClient
         '
-        Me.btnEditClient.Location = New System.Drawing.Point(396, 347)
+        Me.btnEditClient.Location = New System.Drawing.Point(396, 335)
         Me.btnEditClient.Name = "btnEditClient"
         Me.btnEditClient.Size = New System.Drawing.Size(68, 36)
-        Me.btnEditClient.TabIndex = 9
+        Me.btnEditClient.TabIndex = 5
         Me.btnEditClient.Text = "Modifier Client"
         Me.btnEditClient.UseVisualStyleBackColor = True
         '
@@ -108,7 +108,7 @@ Partial Class FormMain
         Me.gbClientInformation.Controls.Add(Me.Label1)
         Me.gbClientInformation.Location = New System.Drawing.Point(236, 117)
         Me.gbClientInformation.Name = "gbClientInformation"
-        Me.gbClientInformation.Size = New System.Drawing.Size(239, 224)
+        Me.gbClientInformation.Size = New System.Drawing.Size(239, 266)
         Me.gbClientInformation.TabIndex = 2
         Me.gbClientInformation.TabStop = False
         Me.gbClientInformation.Text = "Information du Client"
@@ -119,7 +119,7 @@ Partial Class FormMain
         Me.txtPhoneNumber.Mask = "(999) 000-0000"
         Me.txtPhoneNumber.Name = "txtPhoneNumber"
         Me.txtPhoneNumber.Size = New System.Drawing.Size(127, 20)
-        Me.txtPhoneNumber.TabIndex = 3
+        Me.txtPhoneNumber.TabIndex = 5
         '
         'GroupBox1
         '
@@ -128,7 +128,7 @@ Partial Class FormMain
         Me.GroupBox1.Location = New System.Drawing.Point(93, 132)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(127, 73)
-        Me.GroupBox1.TabIndex = 2
+        Me.GroupBox1.TabIndex = 8
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Type de client"
         '
@@ -138,7 +138,7 @@ Partial Class FormMain
         Me.rbBusinessClient.Location = New System.Drawing.Point(6, 48)
         Me.rbBusinessClient.Name = "rbBusinessClient"
         Me.rbBusinessClient.Size = New System.Drawing.Size(88, 17)
-        Me.rbBusinessClient.TabIndex = 6
+        Me.rbBusinessClient.TabIndex = 1
         Me.rbBusinessClient.Text = "Client affaires"
         Me.rbBusinessClient.UseVisualStyleBackColor = True
         '
@@ -149,7 +149,7 @@ Partial Class FormMain
         Me.rbStandardClient.Location = New System.Drawing.Point(6, 25)
         Me.rbStandardClient.Name = "rbStandardClient"
         Me.rbStandardClient.Size = New System.Drawing.Size(95, 17)
-        Me.rbStandardClient.TabIndex = 5
+        Me.rbStandardClient.TabIndex = 0
         Me.rbStandardClient.TabStop = True
         Me.rbStandardClient.Text = "Client standard"
         Me.rbStandardClient.UseVisualStyleBackColor = True
@@ -159,7 +159,7 @@ Partial Class FormMain
         Me.txtEmail.Location = New System.Drawing.Point(93, 106)
         Me.txtEmail.Name = "txtEmail"
         Me.txtEmail.Size = New System.Drawing.Size(127, 20)
-        Me.txtEmail.TabIndex = 4
+        Me.txtEmail.TabIndex = 7
         '
         'Label4
         '
@@ -167,7 +167,7 @@ Partial Class FormMain
         Me.Label4.Location = New System.Drawing.Point(52, 109)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(35, 13)
-        Me.Label4.TabIndex = 0
+        Me.Label4.TabIndex = 6
         Me.Label4.Text = "Email:"
         '
         'Label3
@@ -176,7 +176,7 @@ Partial Class FormMain
         Me.Label3.Location = New System.Drawing.Point(9, 83)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(78, 13)
-        Me.Label3.TabIndex = 0
+        Me.Label3.TabIndex = 4
         Me.Label3.Text = "No Téléphone:"
         '
         'txtAddress
@@ -184,7 +184,7 @@ Partial Class FormMain
         Me.txtAddress.Location = New System.Drawing.Point(93, 54)
         Me.txtAddress.Name = "txtAddress"
         Me.txtAddress.Size = New System.Drawing.Size(127, 20)
-        Me.txtAddress.TabIndex = 2
+        Me.txtAddress.TabIndex = 3
         '
         'Label2
         '
@@ -192,7 +192,7 @@ Partial Class FormMain
         Me.Label2.Location = New System.Drawing.Point(39, 57)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(48, 13)
-        Me.Label2.TabIndex = 0
+        Me.Label2.TabIndex = 2
         Me.Label2.Text = "Adresse:"
         '
         'txtName
@@ -217,7 +217,7 @@ Partial Class FormMain
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(647, 24)
-        Me.MenuStrip1.TabIndex = 11
+        Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'FileToolStripMenuItem
@@ -273,7 +273,7 @@ Partial Class FormMain
         Me.GroupBox2.Location = New System.Drawing.Point(482, 117)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(155, 266)
-        Me.GroupBox2.TabIndex = 12
+        Me.GroupBox2.TabIndex = 6
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Services offerts"
         '
@@ -282,7 +282,7 @@ Partial Class FormMain
         Me.btnRentComputers.Location = New System.Drawing.Point(6, 76)
         Me.btnRentComputers.Name = "btnRentComputers"
         Me.btnRentComputers.Size = New System.Drawing.Size(140, 42)
-        Me.btnRentComputers.TabIndex = 0
+        Me.btnRentComputers.TabIndex = 1
         Me.btnRentComputers.Text = "Location de PC"
         Me.btnRentComputers.UseVisualStyleBackColor = True
         '
@@ -291,7 +291,7 @@ Partial Class FormMain
         Me.btnPhoneAssistance.Location = New System.Drawing.Point(6, 172)
         Me.btnPhoneAssistance.Name = "btnPhoneAssistance"
         Me.btnPhoneAssistance.Size = New System.Drawing.Size(140, 42)
-        Me.btnPhoneAssistance.TabIndex = 0
+        Me.btnPhoneAssistance.TabIndex = 3
         Me.btnPhoneAssistance.Text = "Assistance et coaching"
         Me.btnPhoneAssistance.UseVisualStyleBackColor = True
         '
@@ -309,7 +309,7 @@ Partial Class FormMain
         Me.btnInternetAccess.Location = New System.Drawing.Point(6, 124)
         Me.btnInternetAccess.Name = "btnInternetAccess"
         Me.btnInternetAccess.Size = New System.Drawing.Size(140, 42)
-        Me.btnInternetAccess.TabIndex = 0
+        Me.btnInternetAccess.TabIndex = 2
         Me.btnInternetAccess.Text = "Accès Internet"
         Me.btnInternetAccess.UseVisualStyleBackColor = True
         '
@@ -331,12 +331,12 @@ Partial Class FormMain
         Me.ClientSize = New System.Drawing.Size(647, 390)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.GroupBox2)
-        Me.Controls.Add(Me.gbClientInformation)
         Me.Controls.Add(Me.btnEditClient)
         Me.Controls.Add(Me.btnDeleteClient)
         Me.Controls.Add(Me.btnAddNewClient)
         Me.Controls.Add(Me.lstClients)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.Controls.Add(Me.gbClientInformation)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1

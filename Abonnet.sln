@@ -5,6 +5,11 @@ VisualStudioVersion = 15.0.27428.2011
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Abonnet", "Abonnet\Abonnet.vbproj", "{7DD5A34E-55F0-4DBA-82AE-61705EE194C8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{50997EEC-1C7F-49E1-A4CF-A6D8FF29B798}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\..\Downloads\Equipe_.NetResult_Projet_Abonnet_en_VB.pptx = ..\..\..\..\..\Downloads\Equipe_.NetResult_Projet_Abonnet_en_VB.pptx
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

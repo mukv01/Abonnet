@@ -3,6 +3,7 @@
 Public Class FormMain
     Private clients As New List(Of Client)
     Private selectedClient As Integer
+
     ''' <summary>
     ''' Ajouter un nouveau client
     ''' </summary>
@@ -45,9 +46,10 @@ Public Class FormMain
 
         If Not VerifierClientExistence(newClient) Then
             'Ajouter le client a la liste
-            clients.Add(newClient)
+            clients.Insert(0, newClient)
+
             'Ajouter le nouveau client au listbox
-            lstClients.Items.Add(newClient.Name)
+            lstClients.Items.Insert(0, newClient.Name)
 
             clearTextBoxes()
         End If
@@ -260,6 +262,18 @@ Public Class FormMain
     Private Sub FormMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'Créer un nouveau client
         Dim newClient As New Client
+        newClient.Name = ""
+        newClient.Address = ""
+        newClient.PhoneNumber = ""
+        newClient.Email = ""
+        newClient.TypeClient = "Clients standards"
+
+        'Ajouter le client a la liste
+        clients.Insert(0, newClient)
+        'Ajouter le nouveau client au listbox
+        lstClients.Items.Insert(0, newClient.Name)
+
+        newClient = New Client
         newClient.Name = "Jonathan Tremblay"
         newClient.Address = "144 Boulevard de la paix"
         newClient.PhoneNumber = "6131234566"
@@ -267,9 +281,9 @@ Public Class FormMain
         newClient.TypeClient = "Clients standards"
 
         'Ajouter le client a la liste
-        clients.Add(newClient)
+        clients.Insert(0, newClient)
         'Ajouter le nouveau client au listbox
-        lstClients.Items.Add(newClient.Name)
+        lstClients.Items.Insert(0, newClient.Name)
 
         newClient = New Client
         newClient.Name = "Sophie Charbonneau"
@@ -279,9 +293,9 @@ Public Class FormMain
         newClient.TypeClient = "Clients standards"
 
         'Ajouter le client a la liste
-        clients.Add(newClient)
+        clients.Insert(0, newClient)
         'Ajouter le nouveau client au listbox
-        lstClients.Items.Add(newClient.Name)
+        lstClients.Items.Insert(0, newClient.Name)
 
         newClient = New Client
         newClient.Name = "Imaginatif Inc."
@@ -291,9 +305,9 @@ Public Class FormMain
         newClient.TypeClient = "Clients affaires"
 
         'Ajouter le client a la liste
-        clients.Add(newClient)
+        clients.Insert(0, newClient)
         'Ajouter le nouveau client au listbox
-        lstClients.Items.Add(newClient.Name)
+        lstClients.Items.Insert(0, newClient.Name)
     End Sub
 End Class
 
